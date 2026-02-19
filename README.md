@@ -1,5 +1,5 @@
 # GoogleOnChain
-inGame Google Auth non-custodial Web3 Wallet 
+Unity Google Auth non-custodial Web3 Wallet 
 
 ## Google On Chain ##
 
