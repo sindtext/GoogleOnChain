@@ -48,7 +48,7 @@ c. Download google-services.json and put it in your Unity Assets folder.
 
 5. Change Firestore Rules
 
-        rules_version = '2'; service cloud.firestore { match /databases/{database}/documents { match /{document=**} { allow read, write: if request.auth != null; }}}
+        rules_version = '2'; service cloud.firestore { match /databases/{database}/documents { match /{document=** } { allow create, read, write, update : if request.auth != null; allow delete : if false; } match /users/{userId}/{documents=**} { allow create, read: if request.auth != null; allow write, update, delete: if request.auth.uid == userId; }}}
 
 C. Unity Installation
 1. Download the Firebase Unity SDK.
