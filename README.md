@@ -53,7 +53,7 @@ C. Unity Installation
 3. Import FirebaseDatabase.unitypackage.
 4. Import FirebaseFirestore.unitypackage.
 5. Download the Google Sign-In Unity Plugin.
-https://github.com/googlesamples/google-signin-unity/releases
+>>> https://github.com/googlesamples/google-signin-unity/releases
 6. Import the package. [exclude the "Parse" folder]
 7. Resolve Dependencies:
 >>> Go to Assets -> External Dependency Manager -> Android Resolver -> Force Resolve.
