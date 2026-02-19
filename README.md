@@ -46,6 +46,10 @@ c. Download google-services.json and put it in your Unity Assets folder.
 4. Enable Firebase Database
 >>> In Firebase Console -> Firestore & Realtime Database-> Create Database.
 
+5. Change Firestore Rules
+
+        rules_version = '2'; service cloud.firestore { match /databases/{database}/documents { match /{document=**} { allow read, write: if request.auth != null; }}}
+
 C. Unity Installation
 1. Download the Firebase Unity SDK.
 >>> https://firebase.google.com/download/unity
