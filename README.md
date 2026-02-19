@@ -50,14 +50,16 @@ C. Unity Installation
 1. Download the Firebase Unity SDK.
 >>> https://firebase.google.com/download/unity
 2. Import FirebaseAuth.unitypackage.
-3. Download the Google Sign-In Unity Plugin.
->>> https://github.com/googlesamples/google-signin-unity/releases
-4. Import the package. [exclude the "Parse" folder]
-5. Resolve Dependencies:
+3. Import FirebaseDatabase.unitypackage.
+4. Import FirebaseFirestore.unitypackage.
+5. Download the Google Sign-In Unity Plugin.
+https://github.com/googlesamples/google-signin-unity/releases
+6. Import the package. [exclude the "Parse" folder]
+7. Resolve Dependencies:
 >>> Go to Assets -> External Dependency Manager -> Android Resolver -> Force Resolve.
-6. Make an empty object named "AppManager" and Attach "GoogleLogin.cs", Input your Web Client ID in webClientId at inspector
+8. Make an empty object named "AppManager" and Attach "GoogleLogin.cs", Input your Web Client ID in webClientId at inspector
 
-C. Install Nethereum
+D. Install Nethereum
 1. Install the Nethereum.Unity.package via Package Manager using OpenUpm
 
 >>> open Edit/Project Settings/Package Manager
@@ -110,7 +112,7 @@ C. Install Nethereum
 
 >>> In the function dropdown, select: GoogleAuthWallet -> ReceiveUserID
 
-D. API Compatibility Level
+E. API Compatibility Level
 1. Go to Edit -> Project Settings -> Player.
 2. Find the Other Settings tab.
 3. Look for Api Compatibility Level.
